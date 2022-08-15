@@ -30,7 +30,7 @@ node(){
         }
     }
     stage('loop de entorno'){
-        for(i = 0 , i < 10 , i++){
+        for(i = 0 ; i < 10 ; i++){
                 echo "Entorno: " + i
         }
     }
