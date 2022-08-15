@@ -1,3 +1,6 @@
+def metodo(parametro) {
+    return parametro
+}
 def project = "KDON"
 //def buildNumber = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
