@@ -4,7 +4,7 @@ def metodo(texto) {
 
 node {
     texto = 'Hola' //Variables string con comillas simples o dobles
-    numero = 999  //Puedo o no se indica el tipo de variable
+    numero = 990  //Puedo o no se indica el tipo de variable
     numero ++
     echo texto + " " + numero
     
