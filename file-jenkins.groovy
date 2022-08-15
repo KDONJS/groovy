@@ -1,5 +1,5 @@
 //def project = "KDON"
-def buildNumber = BUILD_NUMBER
+def buildNumber_2 = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
 
 node(){
