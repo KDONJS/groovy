@@ -1,39 +1,39 @@
-def metodo(texto) { 
-   echo texto
-}  
-
+def project = "KDON"
+def buildNumber = $BUILD_NUMBER
+def projectPeriod = "kdon." + buildNumber
 
 node(){
-
-    texto = 'Hola' //Variables string con comillas simples o dobles
-    numero = 990  //Puedo o no se indica el tipo de variable
-    numero ++
-    echo texto + " " + numero
-
-    if(numero <= 900){
-            stage('prueba dif'){
-            echo "hola esta es una prueba de if"
-        }
-    }else{
-            stage('prueba no if'){
-            echo "hola esta es una prueba de no if"
+    stage('Instalacion'){
+        steps(){
+            sh 'yum -y install cowsay'
+            sh 'yum -y install lolcat'
         }
     }
-        
-    stage('Ejemplo') {
-        valor = 1000
-        if (numero >= valor) {
-                echo 'en if'
+    stage('Ejecución'){
+        steps(){
+            sh 'cowsay "KDON"|lolcat'
+        }
+    }
+    stage('Variables'){
+        if(project == "KDON"){
+            stage('Variable si'){
+                steps(){
+                    sh 'cowsay "KDON"|lolcat'
+                }
+            }
         }else{
-                echo 'esto no es verdad'
-        } 
-            
-        for (i = 0; i< 10; i++) {
-                echo "For: " + i
+            stage('Variable no'){
+                steps(){
+                    sh 'cowsay "KDON"|lolcat'
+                }
+            }
         }
     }
-    stage("Saludando") {
-        metodo("como estas yorlin")
+    stage('loop de entorno'){
+        for(i=0 , i<=10 , i++){
+            steps(){
+                echo "Entorno: " + i
+            }
+        }
     }
-    
 }
