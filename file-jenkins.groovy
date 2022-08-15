@@ -1,6 +1,6 @@
 def project = "KDON"
-def buildNumber = BUILD_NUMBER
-def projectPeriod = "kdon." + buildNumber
+//def buildNumber = BUILD_NUMBER
+//def projectPeriod = "kdon." + buildNumber
 
 node(){
     stage('Instalacion'){
