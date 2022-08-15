@@ -1,12 +1,14 @@
 //def project = "KDON"
-//def buildNumber = BUILD_NUMBER
+def buildNumber = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
 
 node(){
     stage('Instalacion'){
-            //sh 'yum -y install cowsay'
-            //sh 'yum -y install lolcat'
-        sh 'echo "Instalando dependencias..."'
+        echo "contruccion: ${buildNumber}"
+        
+        sh 'yum -y install cowsay'
+        sh 'yum -y install lolcat'
+        //sh 'echo "Instalando dependencias..."'
     }
     stage('Ejecución'){
         sh 'echo "Ejecutando..."'
@@ -15,7 +17,7 @@ node(){
         def project = "KDON"
         def buildNumber = BUILD_NUMBER
         echo "Project: ${project}"
-        
+
         if(project == "KDON"){
             stage('Variable si'){
                 sh 'echo "Variable si"'
