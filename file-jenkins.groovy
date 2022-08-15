@@ -1,6 +1,3 @@
-def metodo(parametro) {
-    return parametro
-}
 def project = "KDON"
 //def buildNumber = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
@@ -11,7 +8,7 @@ node(){
             //sh 'yum -y install cowsay'
             //sh 'yum -y install lolcat'
 
-            echo 'Instalando dependencias'
+            sh 'echo "Instalando dependencias..."'
         }
     }
     stage('Ejecución'){
