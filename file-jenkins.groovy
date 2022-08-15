@@ -4,9 +4,9 @@
 
 node(){
     stage('Instalacion'){
-        sh 'sudo yum -y install cowsay'
-        sh 'sudo yum -y install lolcat'
-        //sh 'echo "Instalando dependencias..."'
+        //sh 'sudo yum -y install cowsay'
+        //sh 'sudo yum -y install lolcat'
+        sh 'echo "Instalando dependencias..."'
     }
     stage('Ejecución'){
         sh 'echo "Ejecutando..."'
