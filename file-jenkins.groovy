@@ -1,8 +1,11 @@
 //def project = "KDON"
-def buildNumber_2 = BUILD_NUMBER
+
 //def projectPeriod = "kdon." + buildNumber
 
 node(){
+
+    def buildNumber_2 = BUILD_NUMBER
+
     stage('Instalacion'){
         //sh 'mkdir pruebas && cd pruebas'
         //sh '''touch Index.html'''
