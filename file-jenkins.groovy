@@ -9,7 +9,7 @@ node(){
     stage('Instalacion'){
         //sh 'mkdir pruebas && cd pruebas'
         //sh '''touch Index.html'''
-        sh 'echo "Project: ${buildNumber_2}"'
+        sh 'echo "buildNumber_2: ${buildNumber_2}"'
     }
     stage('Ejecución'){
         //sh 'mkdir copi_1'
