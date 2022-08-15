@@ -1,11 +1,9 @@
 //def project = "KDON"
-def buildNumber = BUILD_NUMBER
+//def buildNumber = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
 
 node(){
     stage('Instalacion'){
-        echo "contruccion: ${buildNumber}"
-        
         sh 'yum -y install cowsay'
         sh 'yum -y install lolcat'
         //sh 'echo "Instalando dependencias..."'
