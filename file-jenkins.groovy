@@ -33,7 +33,7 @@ node {
         }
     }
     stage("Saludando") {
-        metodo("hola")
+        metodo("como estas yorlin")
     }
     
 
