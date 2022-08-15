@@ -15,7 +15,7 @@ node {
         }
     }
     }else{
-        stage('prueba no'){
+        stage('prueba no if'){
         echo "hola esta es una prueba de no if"
     }
     }
