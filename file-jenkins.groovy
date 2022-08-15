@@ -11,11 +11,12 @@ node {
     
     if(numero <= 900){
         stage('prueba if'){
-        echo "hola"
+        echo "hola esta es una prueba de if"
+        }
     }
     }else{
         stage('prueba no if'){
-        echo "hola"
+        echo "hola esta es una prueba de no if"
     }
     }
     
