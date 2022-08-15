@@ -10,7 +10,7 @@ node {
     
     
     if(numero <= 900){
-        stage('prueba if'){
+        stage('prueba dif'){
         echo "hola esta es una prueba de if"
         }
     }
