@@ -12,6 +12,10 @@ node(){
         sh 'echo "Ejecutando..."'
     }
     stage('Variables'){
+        def project = "KDON"
+        def buildNumber = BUILD_NUMBER
+        echo "Project: ${project}"
+        
         if(project == "KDON"){
             stage('Variable si'){
                 sh 'echo "Variable si"'
