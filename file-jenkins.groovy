@@ -16,6 +16,7 @@ node(){
     stage('Variables'){
         def project = "KDON"
         def buildNumber = BUILD_NUMBER
+        echo "buildNumber: ${buildNumber}"
         echo "Project: ${project}"
                      
         if(project == "KDON"){
