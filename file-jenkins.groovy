@@ -1,4 +1,4 @@
-def project = "KDON"
+//def project = "KDON"
 //def buildNumber = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
 
@@ -9,16 +9,16 @@ node(){
         sh 'echo "Instalando dependencias..."'
     }
     stage('Ejecución'){
-        sh 'cowsay "KDON"|lolcat'
+        sh 'echo "Ejecutando..."'
     }
     stage('Variables'){
         if(project == "KDON"){
             stage('Variable si'){
-                sh 'cowsay "KDON"|lolcat'
+                sh 'echo "Variable si"'
             }
         }else{
             stage('Variable no'){
-                sh 'cowsay "KDON"|lolcat'
+                sh 'echo "Variable no"'
             }
         }
     }
