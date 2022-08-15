@@ -4,18 +4,18 @@
 
 node(){
     stage('Instalacion'){
-        //sh 'sudo yum -y install cowsay'
-        //sh 'sudo yum -y install lolcat'
-        sh 'echo "Instalando dependencias..."'
+        sh 'mkdir pruebas && cd pruebas'
+        sh '''touch Index.html'''
     }
     stage('Ejecución'){
-        sh 'echo "Ejecutando..."'
+        sh 'mkdir copi_1'
+        sh 'mv pruebas copi_1'
     }
     stage('Variables'){
         def project = "KDON"
         def buildNumber = BUILD_NUMBER
         echo "Project: ${project}"
-
+                     
         if(project == "KDON"){
             stage('Variable si'){
                 sh 'echo "Variable si"'
