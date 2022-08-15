@@ -9,7 +9,7 @@ node {
     echo texto + " " + numero
     
     
-    if(numero <= 800){
+    if(numero <= 900){
         stage('prueba if'){
         echo "hola esta es una prueba de if"
         }
