@@ -5,8 +5,10 @@ def project = "KDON"
 node(){
     stage('Instalacion'){
         steps(){
-            sh 'yum -y install cowsay'
-            sh 'yum -y install lolcat'
+            //sh 'yum -y install cowsay'
+            //sh 'yum -y install lolcat'
+
+            echo 'Instalando dependencias'
         }
     }
     stage('Ejecución'){
