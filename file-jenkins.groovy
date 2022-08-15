@@ -1,15 +1,17 @@
 //def project = "KDON"
-//def buildNumber = BUILD_NUMBER
+def buildNumber = BUILD_NUMBER
 //def projectPeriod = "kdon." + buildNumber
 
 node(){
     stage('Instalacion'){
-        sh 'mkdir pruebas && cd pruebas'
-        sh '''touch Index.html'''
+        //sh 'mkdir pruebas && cd pruebas'
+        //sh '''touch Index.html'''
+        sh 'echo "Project: ${buildNumber}"'
     }
     stage('Ejecución'){
-        sh 'mkdir copi_1'
-        sh 'mv pruebas copi_1'
+        //sh 'mkdir copi_1'
+        //sh 'mv pruebas copi_1'
+        sh 'echo "ejecutando..."'
     }
     stage('Variables'){
         def project = "KDON"
